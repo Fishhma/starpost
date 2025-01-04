@@ -1,13 +1,14 @@
 from flask import Flask, request, json, jsonify, Response
 import requests
+from models.post import Post
 
 
 app = Flask(__name__)
 
 
 posts = [
-    {"id": 1, "content": "That's my first post"},
-    {"id": 2, "content": "That's my second post"}
+    {"id": 1, "content": "That's my first post", "username": "@fishma"},
+    {"id": 2, "content": "That's my second post", "username": "@fishma"}
 ]
 
 
@@ -45,7 +46,14 @@ def get_post(post_id):
 @app.route('/posts', methods=['POST'])
 def create_post():
     new_post = request.get_json()
+    username = new_post.get("username")
+
+    if not username:
+        return jsonify({"error": "Username is required"}), 400
+
     new_post["id"] = len(posts) + 1
+    new_post["username"] = username
+
     posts.append(new_post)
 
     return jsonify(new_post), 201
