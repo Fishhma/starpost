@@ -1,7 +1,7 @@
 **STARPOST**
 Product Star Posts (API, Flask) by fishma
 
-		-		Documentation		-
+Documentation
 
 This is a simple API for using posts. It supports basic CRUD operations (Create, Read, Update, Delete)
 
@@ -31,14 +31,14 @@ This is a simple API for using posts. It supports basic CRUD operations (Create,
 **Available Routes:**
 
 1. Get All Posts
-   Method: GET
-   URL: /posts
-   Description: Returns a list of all posts
+   - Method: GET
+   - URL: /posts
+   - Description: Returns a list of all posts
 
 2. Get Post by ID
-   Method: GET
-   URL: /posts/id		*'id' = number of the post*
-   Description: Returns the post with the given ID
+   - Method: GET
+   - URL: /posts/id		*'id' = number of the post*
+   - Description: Returns the post with the given ID
 
 3. Create a New Post
    Method: POST
@@ -75,7 +75,6 @@ This is a simple API for using posts. It supports basic CRUD operations (Create,
    **For Windows shell**
 
 ### Within a JSON parameter string, double quotes must be escaped with a backslash (\) so that they are properly treated as part of the data, not as string termination.  
-### For example:   \"content\"
 
 1. Get all posts:
    ```
@@ -105,3 +104,5 @@ This is a simple API for using posts. It supports basic CRUD operations (Create,
 
 
 Accessing the README:
+To view this documentation in full, visit the following link: 
+https://github.com/Fishhma/starpost/blob/main/README.md
