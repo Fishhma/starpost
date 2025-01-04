@@ -1,105 +1,70 @@
-**STARPOST**
-Product Star Posts (API, Flask) by fishma
+Star Posts API
+A simple API for managing posts with basic CRUD operations.
 
-#### Documentation
+Installation on Windows
+Clone the repository:
+git clone https://github.com/Fishhma/starpost.git
 
-This is a simple API for using posts. It supports basic CRUD operations (Create, Read, Update, Delete)
+Navigate to the project directory:
+cd starpost
 
+Install the required dependencies:
+pip install -r requirements.txt
 
+Start the application:
+python app.py
 
-**How to install on Windows**
-	   **Run**
-										
-1.
-'''
-bash git clone https://github.com/Fishhma/starpost.git
-'''
-2.
-'''
-bash cd starpost
-'''
-3.
-'''bash pip install -r requirements.txt
-'''
-4.
-'''
-bash python app.py
-'''
-
-		
-**Available Routes:**
-
-1.
+Available Routes
 Get All Posts
 Method: GET
 URL: /posts
 Description: Returns a list of all posts
 
-2.
 Get Post by ID
 Method: GET
-URL: /posts/id		*'id' = number of the post*
-Description: Returns the post with the given ID
+URL: /posts/<id>
+(Replace <id> with the desired post ID)
+Description: Returns the post with the specified ID
 
-3.
 Create a New Post
 Method: POST
 URL: /posts
 Description: Creates a new post
 Request Body (JSON):
 {
-  "content": "Write content here"
-  "username": "@fishma"
+"content": "Write content here",
+"username": "@fishma"
 }
 
-4.
 Update Post by ID
 Method: PUT
-URL: /posts/id		*'id' = number of the post*
-Description: Updates the post with the given ID
+URL: /posts/<id>
+(Replace <id> with the desired post ID)
+Description: Updates the post with the specified ID
 Request Body (JSON):
 {
-  "content": "Updated content"
-  "username": "@fishma"
+"content": "Updated content",
+"username": "@fishma"
 }
 
-5.
 Delete Post by ID
 Method: DELETE
-URL: /posts/id
-Description: Deletes the post with the given ID
+URL: /posts/<id>
+(Replace <id> with the desired post ID)
+Description: Deletes the post with the specified ID
 
-
-
-**Example Usage with curl:**
-   **For Windows shell**
-
-### Within a JSON parameter string, double quotes must be escaped with a backslash (\) so that they are properly treated as part of the data, not as string termination.  
-### For example:   \"content\"
-
-1.
+Example Usage with curl
 Get all posts:
-' '''bash curl -X GET http://127.0.0.1:5000/posts ''' '
+curl -X GET http://127.0.0.1:5000/posts
 
-2.
-Get a certain post:
-' '''bash curl -X GET http://127.0.0.1:5000/posts/id ''' '
+Get a specific post:
+curl -X GET http://127.0.0.1:5000/posts/<id>
 
-3.
 Create a new post:
-' '''bash curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"Test post content\", \"username\": \"@fishma\"}" http://127.0.0.1:5000/posts ''' '
+curl -X POST -H "Content-Type: application/json" -d "{"content": "Test post content", "username": "@fishma"}" http://127.0.0.1:5000/posts
 
-4.
 Update a post:
-' '''bash curl -X PUT -H "Content-Type: application/json" -d "{\"content\": \"Updated post content\", \"username\": \"@fishma\"}" http://127.0.0.1:5000/posts/id ''' '
+curl -X PUT -H "Content-Type: application/json" -d "{"content": "Updated post content", "username": "@fishma"}" http://127.0.0.1:5000/posts/<id>
 
-5.
 Delete a post:
-' '''bash curl -X DELETE http://127.0.0.1:5000/posts/id ''' '
-
-
-
-Accessing the README:
-
-To view this documentation in full, visit the following link:
-https://github.com/Fishhma/starpost/blob/main/README.md
+curl -X DELETE http://127.0.0.1:5000/posts/<id>
