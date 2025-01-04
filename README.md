@@ -14,11 +14,17 @@ This is a simple API for using posts. It supports basic CRUD operations (Create,
    git clone https://github.com/Fishhma/starpost.git
    ```
    
-2. cd starpost
+2. ```
+   cd starpost
+   ```
 
-3. pip install -r requirements.txt
+3. ```
+   pip install -r requirements.txt
+   ```
 
-4. python app.py
+4. ```
+   python app.py
+   ```
 
 
 		
@@ -39,20 +45,24 @@ This is a simple API for using posts. It supports basic CRUD operations (Create,
    URL: /posts
    Description: Creates a new post
    Request Body (JSON):
+   ```
      {
        "content": "Write content here"
        "username": "@fishma"
      }
+   ```
 
 5. Update Post by ID
    Method: PUT
    URL: /posts/id		*'id' = number of the post*
    Description: Updates the post with the given ID
    Request Body (JSON):
+   ```
      {
        "content": "Updated content"
        "username": "@fishma"
      }
+   ```
 
 6. Delete Post by ID
    Method: DELETE
@@ -68,19 +78,29 @@ This is a simple API for using posts. It supports basic CRUD operations (Create,
 ### For example:   \"content\"
 
 1. Get all posts:
+   ```
    curl -X GET http://127.0.0.1:5000/posts
+   ```
 
 2. Get a certain post:
-   curl -X GET http://127.0.0.1:5000/posts/id			*'id' = number of the post*
+   ```
+   curl -X GET http://127.0.0.1:5000/posts/id
+   ```
 
 3. Create a new post:
+   ```
    curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"Test post content\", \"username\": \"@fishma\"}" http://127.0.0.1:5000/posts
+   ```
 
 4. Update a post:
-   curl -X PUT -H "Content-Type: application/json" -d "{\"content\": \"Updated post content\", \"username\": \"@fishma\"}" http://127.0.0.1:5000/posts/id	*'id' = number of the post*
+   ```
+   curl -X PUT -H "Content-Type: application/json" -d "{\"content\": \"Updated post content\", \"username\": \"@fishma\"}" http://127.0.0.1:5000/posts/id
+   ```
 
 5. Delete a post:
-   curl -X DELETE http://127.0.0.1:5000/posts/id	*'id' = number of the post*
+   ```
+   curl -X DELETE http://127.0.0.1:5000/posts/id
+   ```
 
 
 
