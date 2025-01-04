@@ -10,18 +10,10 @@ This is a simple API for using posts. It supports basic CRUD operations (Create,
 **How to install on Windows**
 	   **Run**
 										
-1. '''bash
-git clone https://github.com/Fishhma/starpost.git
-'''   
-2. '''bash
-cd starpost
-'''
-3. '''bash
-pip install -r requirements.txt
-'''
-4. '''bash
-python app.py
-'''
+1. ' '''bash git clone https://github.com/Fishhma/starpost.git ''' '  
+2. ' '''bash cd starpost ''' '
+3. ' '''bash pip install -r requirements.txt ''' '
+4. ' '''bash python app.py ''' '
 
 		
 **Available Routes:**
@@ -76,33 +68,23 @@ Description: Deletes the post with the given ID
 
 1.
 Get all posts:
-'''bash
-curl -X GET http://127.0.0.1:5000/posts
-'''
+' '''bash curl -X GET http://127.0.0.1:5000/posts ''' '
+
+2.
+Get a certain post:
+' '''bash curl -X GET http://127.0.0.1:5000/posts/id ''' '
 
 3.
-Get a certain post:
-'''bash
-curl -X GET http://127.0.0.1:5000/posts/id
-'''
+Create a new post:
+' '''bash curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"Test post content\", \"username\": \"@fishma\"}" http://127.0.0.1:5000/posts ''' '
 
 4.
-Create a new post:
-'''bash
-curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"Test post content\", \"username\": \"@fishma\"}" http://127.0.0.1:5000/posts
-'''
-
-6.
 Update a post:
-'''bash
-curl -X PUT -H "Content-Type: application/json" -d "{\"content\": \"Updated post content\", \"username\": \"@fishma\"}" http://127.0.0.1:5000/posts/id
-'''
+' '''bash curl -X PUT -H "Content-Type: application/json" -d "{\"content\": \"Updated post content\", \"username\": \"@fishma\"}" http://127.0.0.1:5000/posts/id ''' '
 
-8.
+5.
 Delete a post:
-'''bash
-curl -X DELETE http://127.0.0.1:5000/posts/id
-'''
+' '''bash curl -X DELETE http://127.0.0.1:5000/posts/id ''' '
 
 
 
