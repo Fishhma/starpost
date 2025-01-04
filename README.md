@@ -1,70 +1,87 @@
-Star Posts API
-A simple API for managing posts with basic CRUD operations.
+**STARPOST**
+Product Star Posts (API, Flask) by fishma
 
-Installation on Windows
-Clone the repository:
-git clone https://github.com/Fishhma/starpost.git
+		-		Documentation		-
 
-Navigate to the project directory:
-cd starpost
+This is a simple API for using posts. It supports basic CRUD operations (Create, Read, Update, Delete)
 
-Install the required dependencies:
-pip install -r requirements.txt
 
-Start the application:
-python app.py
 
-Available Routes
-Get All Posts
-Method: GET
-URL: /posts
-Description: Returns a list of all posts
+**How to install on Windows**
+	   **Run**
+										
+1. ```
+   git clone https://github.com/Fishhma/starpost.git
+   ```
+   
+2. cd starpost
 
-Get Post by ID
-Method: GET
-URL: /posts/<id>
-(Replace <id> with the desired post ID)
-Description: Returns the post with the specified ID
+3. pip install -r requirements.txt
 
-Create a New Post
-Method: POST
-URL: /posts
-Description: Creates a new post
-Request Body (JSON):
-{
-"content": "Write content here",
-"username": "@fishma"
-}
+4. python app.py
 
-Update Post by ID
-Method: PUT
-URL: /posts/<id>
-(Replace <id> with the desired post ID)
-Description: Updates the post with the specified ID
-Request Body (JSON):
-{
-"content": "Updated content",
-"username": "@fishma"
-}
 
-Delete Post by ID
-Method: DELETE
-URL: /posts/<id>
-(Replace <id> with the desired post ID)
-Description: Deletes the post with the specified ID
+		
+**Available Routes:**
 
-Example Usage with curl
-Get all posts:
-curl -X GET http://127.0.0.1:5000/posts
+1. Get All Posts
+   Method: GET
+   URL: /posts
+   Description: Returns a list of all posts
 
-Get a specific post:
-curl -X GET http://127.0.0.1:5000/posts/<id>
+2. Get Post by ID
+   Method: GET
+   URL: /posts/id		*'id' = number of the post*
+   Description: Returns the post with the given ID
 
-Create a new post:
-curl -X POST -H "Content-Type: application/json" -d "{"content": "Test post content", "username": "@fishma"}" http://127.0.0.1:5000/posts
+3. Create a New Post
+   Method: POST
+   URL: /posts
+   Description: Creates a new post
+   Request Body (JSON):
+     {
+       "content": "Write content here"
+       "username": "@fishma"
+     }
 
-Update a post:
-curl -X PUT -H "Content-Type: application/json" -d "{"content": "Updated post content", "username": "@fishma"}" http://127.0.0.1:5000/posts/<id>
+5. Update Post by ID
+   Method: PUT
+   URL: /posts/id		*'id' = number of the post*
+   Description: Updates the post with the given ID
+   Request Body (JSON):
+     {
+       "content": "Updated content"
+       "username": "@fishma"
+     }
 
-Delete a post:
-curl -X DELETE http://127.0.0.1:5000/posts/<id>
+6. Delete Post by ID
+   Method: DELETE
+   URL: /posts/id
+   Description: Deletes the post with the given ID
+
+
+
+**Example Usage with curl:**
+   **For Windows shell**
+
+### Within a JSON parameter string, double quotes must be escaped with a backslash (\) so that they are properly treated as part of the data, not as string termination.  
+### For example:   \"content\"
+
+1. Get all posts:
+   curl -X GET http://127.0.0.1:5000/posts
+
+2. Get a certain post:
+   curl -X GET http://127.0.0.1:5000/posts/id			*'id' = number of the post*
+
+3. Create a new post:
+   curl -X POST -H "Content-Type: application/json" -d "{\"content\": \"Test post content\", \"username\": \"@fishma\"}" http://127.0.0.1:5000/posts
+
+4. Update a post:
+   curl -X PUT -H "Content-Type: application/json" -d "{\"content\": \"Updated post content\", \"username\": \"@fishma\"}" http://127.0.0.1:5000/posts/id	*'id' = number of the post*
+
+5. Delete a post:
+   curl -X DELETE http://127.0.0.1:5000/posts/id	*'id' = number of the post*
+
+
+
+Accessing the README:
