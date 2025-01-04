@@ -10,10 +10,21 @@ This is a simple API for using posts. It supports basic CRUD operations (Create,
 **How to install on Windows**
 	   **Run**
 										
-1. ' '''bash git clone https://github.com/Fishhma/starpost.git ''' '  
-2. ' '''bash cd starpost ''' '
-3. ' '''bash pip install -r requirements.txt ''' '
-4. ' '''bash python app.py ''' '
+1.
+'''
+bash git clone https://github.com/Fishhma/starpost.git
+'''
+2.
+'''
+bash cd starpost
+'''
+3.
+'''bash pip install -r requirements.txt
+'''
+4.
+'''
+bash python app.py
+'''
 
 		
 **Available Routes:**
