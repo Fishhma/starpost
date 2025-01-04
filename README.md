@@ -37,7 +37,7 @@ This is a simple API for using posts. It supports basic CRUD operations (Create,
 
 2. Get Post by ID
    - Method: GET
-   - URL: /posts/id		*'id' = number of the post*
+   - URL: /posts/id
    - Description: Returns the post with the given ID
 
 3. Create a New Post
@@ -54,7 +54,7 @@ This is a simple API for using posts. It supports basic CRUD operations (Create,
 
 4. Update Post by ID
    - Method: PUT
-   - URL: /posts/id		*'id' = number of the post*
+   - URL: /posts/id
    - Description: Updates the post with the given ID
    - Request Body (JSON):
    ```
