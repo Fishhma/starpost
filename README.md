@@ -1,7 +1,7 @@
+### Documentation
+
 **STARPOST**
 Product Star Posts (API, Flask) by fishma
-
-Documentation
 
 This is a simple API for using posts. It supports basic CRUD operations (Create, Read, Update, Delete)
 
@@ -41,10 +41,10 @@ This is a simple API for using posts. It supports basic CRUD operations (Create,
    - Description: Returns the post with the given ID
 
 3. Create a New Post
-   Method: POST
-   URL: /posts
-   Description: Creates a new post
-   Request Body (JSON):
+   - Method: POST
+   - URL: /posts
+   - Description: Creates a new post
+   - Request Body (JSON):
    ```
      {
        "content": "Write content here"
@@ -52,11 +52,11 @@ This is a simple API for using posts. It supports basic CRUD operations (Create,
      }
    ```
 
-5. Update Post by ID
-   Method: PUT
-   URL: /posts/id		*'id' = number of the post*
-   Description: Updates the post with the given ID
-   Request Body (JSON):
+4. Update Post by ID
+   - Method: PUT
+   - URL: /posts/id		*'id' = number of the post*
+   - Description: Updates the post with the given ID
+   - Request Body (JSON):
    ```
      {
        "content": "Updated content"
@@ -64,10 +64,10 @@ This is a simple API for using posts. It supports basic CRUD operations (Create,
      }
    ```
 
-6. Delete Post by ID
-   Method: DELETE
-   URL: /posts/id
-   Description: Deletes the post with the given ID
+5. Delete Post by ID
+   - Method: DELETE
+   - URL: /posts/id
+   - Description: Deletes the post with the given ID
 
 
 
