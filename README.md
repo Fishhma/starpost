@@ -74,7 +74,7 @@ This is a simple API for using posts. It supports basic CRUD operations (Create,
 **Example Usage with curl:**
    **For Windows shell**
 
-### Within a JSON parameter string, double quotes must be escaped with a backslash (\) so that they are properly treated as part of the data, not as string termination.  
+### Within a JSON parameter string, double quotes must be escaped with a backslash "\" so that they are properly treated as part of the data, not as string termination.  
 
 1. Get all posts:
    ```
