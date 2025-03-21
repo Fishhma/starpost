@@ -1,10 +1,7 @@
 ### Documentation
 
-**STARPOST**
-Product Star Posts (API, Flask) by fishma
 
-This is a simple API for using posts. It supports basic CRUD operations (Create, Read, Update, Delete)
-
+This is a simple API for using posts. It supports basic CRUD operations
 
 
 **How to install on Windows**
