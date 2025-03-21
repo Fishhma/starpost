@@ -1,8 +1,9 @@
 ### Documentation
 
 
-This is a simple API for using posts. It supports basic CRUD operations
-Вon't judge me harshly. This is my first project
+This is a simple API for using posts. It supports basic CRUD operations. 
+
+Don't judge me harshly. This is my first project :)
 
 **How to run on Windows**
 	
