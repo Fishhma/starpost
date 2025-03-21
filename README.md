@@ -5,7 +5,7 @@ This is a simple API for using posts. It supports basic CRUD operations
 
 
 **How to install on Windows**
-	   **Run**
+	
 										
 1. ```
    git clone https://github.com/Fishhma/starpost.git
