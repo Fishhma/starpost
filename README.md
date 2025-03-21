@@ -4,7 +4,7 @@
 This is a simple API for using posts. It supports basic CRUD operations
 
 
-**How to install on Windows**
+**How to run on Windows**
 	
 										
 1. ```
